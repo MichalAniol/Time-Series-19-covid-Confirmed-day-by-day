@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Rubik-Regular.eot');
+    src: local('open sans extralight'), local('open-sans-extralight'), url('font/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('font/Rubik-Regular.woff2') format('woff2'), url('font/Rubik-Regular.woff') format('woff'), url('font/Rubik-Regular.ttf') format('truetype'), url('font/Rubik-Regular.svg#Barlow') format('svg');
+}
+
+html {
+    --color_1: #006600;
+    --color_2: #001600;
+    --color_3: #000800;
+    --color_back: black;
+    --font: 'Rubik', sans-serif
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: var(--color_back);
+    color: var(--color_1);
+    font-family: var(--font);
+    font-size: 30px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    overflow: hidden;
+}
+
+#wold_map {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid var(--color_2);
+    position: relative;
+}
+
+#wold_map img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#wold_map canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+#example {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    text-shadow: 0px 0px 10px #000000;
+    width: 100%;
+    text-align: center;
+}
+
+.title b {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#day {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    text-shadow: 0px 0px 10px #000000;
+}
+#wait {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(7, 224, 7);
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 2em;
+}
