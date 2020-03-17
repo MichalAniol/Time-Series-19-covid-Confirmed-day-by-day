@@ -91,4 +91,5 @@ body {
     color: rgb(7, 224, 7);
     text-shadow: 0px 0px 10px #000000;
     font-size: 2em;
+    white-space: nowrap;
 }
